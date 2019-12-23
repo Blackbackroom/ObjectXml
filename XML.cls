@@ -3,8 +3,8 @@
  * @Description        : 
  * @Author             : saranchukvm87@gmail.com
  * @Group              : 
- * @Last Modified By   : saranchukvm87@gmail.com
- * @Last Modified On   : 12/22/2019, 9:51:14 PM
+ * @Last Modified By   : victor.saranchuk@koroka.solution
+ * @Last Modified On   : 23.12.2019, 09:36:47
  * @Modification Log   : 
  * Ver       Date            Author      		    Modification
  * 1.0    12/22/2019   saranchukvm87@gmail.com     Initial Version
@@ -189,7 +189,7 @@ public without sharing class XML
 
         public Describe(String prefix, String uri, String name, Object value, Boolean isSelfClosedIfEmpty)
         {
-            super(prefix, uri, name, value != NULL ? String.valueOf(value) : NULL);
+            super(prefix, uri, name, value != NULL ? ( (value instanceOf Blob) ? ((Blob)value).toString() : String.valueOf(value) ) : NULL);
             this.namespaces = new List<XML.Namespace>();
             this.attributes = new List<XML.Attribute>();
             this.isSelfClosedIfEmpty = isSelfClosedIfEmpty != NULL ? isSelfClosedIfEmpty : false;
