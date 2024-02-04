@@ -3,7 +3,7 @@
  * @Description        : 
  * @Author             : saranchukvm87@gmail.com
  * @Group              : 
- * @Last Modified By   : victor.saranchuk@koroka.solution
+ * @Last Modified By   : saranchukvm87@gmail.com
  * @Last Modified On   : 23.12.2019, 09:36:47
  * @Modification Log   : 
  * Ver       Date            Author      		    Modification
